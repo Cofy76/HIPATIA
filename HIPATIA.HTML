@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>HIPATIA - Aprende sin límites desde tu hogar</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+</head>
+<body class="bg-gray-100 text-gray-800 font-sans">
+
+  <!-- Encabezado con efecto parallax -->
+  <header class="relative bg-blue-900 text-white h-64 flex items-center justify-center overflow-hidden">
+    <div class="absolute inset-0 bg-blue-900 bg-opacity-80"></div>
+    <div class="relative text-center z-10">
+      <h1 class="text-5xl font-bold mb-2 animate-fadeInDown">HIPATIA</h1>
+      <p class="text-xl animate-fadeInUp">Aprende sin límites desde tu hogar</p>
+    </div>
+  </header>
+
+  <!-- Servicios con íconos animados -->
+  <section class="container mx-auto my-12 px-4">
+    <h2 class="text-3xl font-semibold text-blue-900 mb-8 text-center">Nuestros Servicios</h2>
+    <div class="grid md:grid-cols-3 gap-6 text-center">
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+        <i class="fas fa-square-root-alt text-4xl text-blue-900 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Matemáticas</h3>
+        <p>Nivel preparatoria y universidad, enfocadas en comprensión profunda y desarrollo lógico.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+        <i class="fas fa-atom text-4xl text-blue-900 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Física</h3>
+        <p>Clases prácticas y teóricas para entender los conceptos fundamentales con claridad.</p>
+      </div>
+      <div class="bg-white p-6 rounded-xl shadow-lg hover:scale-105 transition-transform duration-300">
+        <i class="fas fa-flask text-4xl text-blue-900 mb-4"></i>
+        <h3 class="text-xl font-bold mb-2">Química</h3>
+        <p>Aprende los principios y aplicaciones de la química de forma clara y estructurada.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Sobre Nosotros con animación de aparición -->
+  <section class="bg-gray-200 py-12">
+    <div class="container mx-auto px-4 max-w-3xl text-center animate-fadeIn">
+      <h2 class="text-3xl font-semibold text-blue-900 mb-4">Sobre Nosotros</h2>
+      <p>Somos <strong>Maestros en Ciencias</strong> comprometidos con la enseñanza de las matemáticas, la física y la química. Nuestra labor se centra en ofrecer una formación de calidad, basada en la comprensión profunda de los conceptos científicos y en el desarrollo del pensamiento lógico y analítico de cada estudiante.</p>
+    </div>
+  </section>
+
+  <!-- Contacto con formulario elegante y botones flotantes -->
+  <section class="container mx-auto my-12 px-4 max-w-lg">
+    <h2 class="text-3xl font-semibold text-blue-900 mb-6 text-center">Contáctanos</h2>
+    <form class="bg-white p-6 rounded-xl shadow-lg space-y-4">
+      <div>
+        <label class="block mb-1 font-medium">Nombre</label>
+        <input type="text" class="w-full border-gray-300 border rounded-lg p-2" placeholder="Tu nombre">
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Correo electrónico</label>
+        <input type="email" class="w-full border-gray-300 border rounded-lg p-2" placeholder="Tu correo">
+      </div>
+      <div>
+        <label class="block mb-1 font-medium">Mensaje</label>
+        <textarea class="w-full border-gray-300 border rounded-lg p-2" rows="4" placeholder="Escribe tu mensaje"></textarea>
+      </div>
+      <button class="bg-blue-900 text-white px-6 py-2 rounded-xl shadow-md hover:bg-blue-800 transition w-full">Enviar</button>
+    </form>
+
+    <!-- Redes Sociales -->
+    <div class="flex justify-center mt-6 space-x-6">
+      <a href="https://www.facebook.com/tuPagina" target="_blank" class="text-blue-900 font-semibold hover:underline"><i class="fab fa-facebook fa-lg mr-2"></i>Facebook</a>
+      <a href="https://wa.me/tuNumero" target="_blank" class="text-green-600 font-semibold hover:underline"><i class="fab fa-whatsapp fa-lg mr-2"></i>WhatsApp</a>
+    </div>
+  </section>
+
+  <!-- Pie de página -->
+  <footer class="bg-gray-200 text-center py-4">
+    <p class="text-gray-700">&copy; 2025 HIPATIA. Todos los derechos reservados.</p>
+  </footer>
+
+  <!-- Animaciones simples -->
+  <style>
+    @keyframes fadeInDown { from { opacity: 0; transform: translateY(-20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeInUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
+    @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+    .animate-fadeInDown { animation: fadeInDown 1s ease-out; }
+    .animate-fadeInUp { animation: fadeInUp 1s ease-out; }
+    .animate-fadeIn { animation: fadeIn 2s ease-out; }
+  </style>
+
+</body>
+</html>
